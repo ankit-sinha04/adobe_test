@@ -20,6 +20,8 @@
 
 
     <script>
+	    var Member=['','gold','silver'];
+        var loginSts=['guest','loggedIn'];
         var digitalData = digitalData || {};
         digitalData = {
             page: {
@@ -29,10 +31,10 @@
                 server: "geometrix"
             },
 	    profile: {
-                memberShipType: "gold",
+                memberShipType: Member[Math.floor((Math.random() * 3))],,
             },
             customer: {
-                loginStatus: "loggedIn",
+                loginStatus: loginSts[Math.floor((Math.random() * 2))],
             },
         };
     </script>
