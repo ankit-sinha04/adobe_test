@@ -11,12 +11,20 @@
 
 <script>
     var digitalData = digitalData || {};
+	    var Member=['','gold','silver'];
+        var loginSts=['guest','loggedIn'];
     digitalData = {
         page: {
             pageName: "Men",
             siteSection: "Men",
             server: "Geometrixx Clothiers Site"
         },
+	    profile: {
+                memberShipType: Member[Math.floor((Math.random() * 3))],
+            },
+            customer: {
+                loginStatus: loginSts[Math.floor((Math.random() * 2))],
+            },
     };
 </script>
 
